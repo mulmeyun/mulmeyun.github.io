@@ -8,14 +8,17 @@
     
     <a-scene embedded arjs>
       
+      <a-assets>
+        <a-asset-item id="miku" src="https://mulmeyun.github.io/assets/miku.gltf"></a-asset-item>
+      </a-assets> 
+      
       <a-marker preset="hiro">
         
         <a-entity
-          id="miku"
           position="0 0 0"
           rotation="0 0 0"
-          scale="0.5 0.5 0.5"
-          gltf-model="url(mulmeyun.github.io/assets/miku.gltf)">
+          scale="0.25 0.25 0.25"
+          gltf-model="#miku">
         </a-entity>
         
       </a-marker>
